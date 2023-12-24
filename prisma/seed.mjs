@@ -290,14 +290,14 @@ async function genStaffInfo() {
 
     const stf = await prisma.staff.create({
       data: {
-        StaffName: 'Chung Wai Man',
+        StaffName: '',
         AgentName: 'Seamatch Asia Limited',
         StaffCategory: 'CAP/CSA',
-        Department: 'ArchSD',
-        PostUnit: 'TS3',
-        ManagerName: 'Mr Anthony WONG',
-        ManagerEmail: 'wongyf3@archsd.gov.hk',
-        ManagerTitle: 'PSM/TS33',
+        Department: '',
+        PostUnit: '',
+        ManagerName: '',
+        ManagerEmail: '',
+        ManagerTitle: '',
         user: { connect: { id: u.id } },
         contracts: {
           create: [
